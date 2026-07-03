@@ -6,3 +6,4 @@ from notes.models import user
 class userAdmin(admin.ModelAdmin): 
     date_heirarchy="create_time"
     
+admin.site.register(user,userAdmin) 
