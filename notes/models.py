@@ -1,3 +1,10 @@
 from django.db import models
 
 # Create your models here.
+
+class Notes(models.Model):
+    name = models.CharField(max_length=100)
+    topic = models.TextField(max_length=200)
+    create_time = models.DateTimeField(auto_now_add="True") 
+    update_time = DateTimeField(auto_now="True") 
+    
