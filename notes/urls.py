@@ -1,6 +1,6 @@
-from django.contrib import admin
 from django.urls import path
 from notes import views
+
 
 urlpatterns = [
     path("", views.login_page, name="login_page"),
@@ -9,4 +9,3 @@ urlpatterns = [
     path("home/", views.home_view , name="home"),
     path("home/",views.home ,name="home" ),
 ]
-
